@@ -1,0 +1,14 @@
+virtual Environment
+
+Create the virtual environment named "env":
+> python -m venv env 
+
+Add the path to the git ignore file (optional):
+> echo env/ >> .gitignore
+
+Activate the virtual env:
+> .\env\Scripts\activates
+
+mac
+
+source env/Scripts/activate

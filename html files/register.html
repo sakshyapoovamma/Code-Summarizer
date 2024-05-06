@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <h1 onclick="window.location.href='home.html'">Logger.</h1>
+
+    <div class="container">
+      <img
+        src="https://i.pinimg.com/originals/4b/52/8b/4b528b78673fe14e8c449c2bbb1f37b3.gif"
+        alt=""
+      />
+
+      <form id="form" action="register.php" method="post">
+        <h1>Registration.</h1>
+        <div class="input-control">
+          <label for="username"><b>Username</b> </label>
+          <input id="username" name="username" type="text" required />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email"><b>Email</b></label>
+          <input id="email" name="email" type="text" required />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password"><b>Password</b></label>
+          <input id="password" name="password" type="password" required />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password2"><b>Confirm Password</b></label>
+          <input id="password2" name="password2" type="password" required />
+          <div class="error"></div>
+        </div>
+        <button type="submit">sign Up</button>
+        <button
+        id="existing"
+        type="submit"
+        onclick="window.location.href='signup.html'"
+      >
+      <button
+        id="existing"
+        type="submit"
+        onclick="window.location.href='signup.html'"
+      >
+      </form>
+      
+        Already have an Account
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/z-index.css') }}"
+    />
+    <title>Logger.</title>
+    <style>
+      body {
+        background-image: url("/static/img/MacBook\ Pro\ 14_\ -\ 1.png");
+      }
+      .head1 {
+        position: absolute;
+        font-family: "Courier New";
+        color: #ad76ff;
+        font-weight: bold;
+        font-size: 30px;
+        top: 100px;
+        right: 400px;
+      }
+      .head2 {
+        position: absolute;
+        font-family: "Courier New";
+        color: #ff7676;
+        font-weight: bold;
+        font-size: 30px;
+        top: 250px;
+        right: 430px;
+      }
+      .head3 {
+        position: absolute;
+        font-family: "Courier New";
+        color: #9baffe;
+        font-weight: bold;
+        font-size: 30px;
+        top: 400px;
+        right: 460px;
+      }
+      .prompt {
+        position: absolute;
+        width: 600px;
+        right: 600px;
+        top: 90px;
+        border-radius: 10px;
+        background-color: #36363600;
+        border-color: rgba(0, 0, 0, 0);
+      }
+      .text {
+        background-color: rgba(24, 24, 24, 0.258);
+        position: absolute;
+        left: 0px;
+        color: white;
+        font-size: medium;
+        font-family: "Courier New";
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: rgba(46, 46, 46, 0.446);
+        border-color: rgb(87, 87, 87);
+      }
+      .button1 {
+        width: 150px;
+        position: relative;
+        height: 50px;
+        top: 570px;
+        left: 10px;
+
+        color: #2b0044;
+        background: #ad76ff;
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 50px;
+
+        border-color: #edccff;
+      }
+      .button2 {
+        position: relative;
+        width: 150px;
+        height: 50px;
+        top: 570px;
+        left: 10px;
+        color: #2b0044;
+        background: rgb(255, 125, 125);
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 50px;
+
+        border-color: #ffd2d2;
+      }
+      .button3 {
+        position: relative;
+        width: 150px;
+        height: 50px;
+        top: 570px;
+        left: 10px;
+        color: #2b0044;
+        background: rgb(132, 132, 255);
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 50px;
+
+        border-color: #cdd7ff;
+      }
+      .whale {
+        position: absolute;
+        top: 2px;
+        left: 15px;
+        width: 110px;
+      }
+      img {
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        width: 250px;
+      }
+      .para {
+        display: block;
+        position: absolute;
+        height: 650px;
+        width: 550px;
+        right: 8px;
+        top: 180px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border-radius: 20px;
+        z-index: -2;
+        font-family: "Courier New";
+      }
+      .para2 {
+        position: absolute;
+        display: block;
+        position: absolute;
+        height: 650px;
+        width: 550px;
+        right: 8px;
+        top: 330px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border-radius: 20px;
+        z-index: -2;
+        font-family: "Courier New";
+      }
+      .para3 {
+        position: absolute;
+        display: block;
+        position: absolute;
+        height: 650px;
+        width: 550px;
+        right: 8px;
+        top: 480px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border-radius: 20px;
+        z-index: -2;
+        font-family: "Courier New";
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="{{url_for('static',filename='img/whale 1.png')}}" class="whale" />
+    <img
+      src="{{url_for('static',filename='img/knowyourcode.png')}}"
+      class="kyc"
+    />
+    <div>
+      <h2 class="head1">Summarize</h2>
+      <h2 class="head2">Explain</h2>
+      <h2 class="head3">Debug</h2>
+      <div class="para">
+        It briefly describes what your code is about or what the code is
+        programmed to output.
+      </div>
+      <div class="para2">
+        It tells us in detail about the functions or main logic in the code and
+        how it works.
+      </div>
+      <div class="para3">
+        This involves checking the code for syntax or logical errors, and
+        informing us about them.
+      </div>
+    </div>
+    <form action="/second" method="POST" class="prompt">
+      <label for="Name"></label>
+      <textarea rows="30" cols="60" name="name" id="name" class="text">
+      </textarea>
+
+      <input
+        type="submit"
+        id="sub1"
+        name="sub1"
+        class="button1"
+        value="Summarize"
+      />
+      <input
+        type="submit"
+        id="sub1"
+        name="sub1"
+        class="button2"
+        value="Explain"
+      />
+      <input
+        type="submit"
+        id="sub1"
+        name="sub1"
+        class="button3"
+        value="Debug"
+      />
+    </form>
+  </body>
+</html>

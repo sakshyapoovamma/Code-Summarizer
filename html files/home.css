@@ -1,0 +1,117 @@
+body {
+    
+}
+h1{
+    position: absolute;
+    top: 20px;
+    left:15px ;
+    font-size: 30px;
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.noobprog{
+    position:absolute;
+    font-family: 'courier new';
+    font-size: 20px;
+    color: rgb(170, 134, 255);
+    top: 370px;
+    left:40px;
+}
+h2{
+    position:absolute;
+    font-family: 'courier new';
+    font-size: 20px;
+    color: #fff;
+    top: 130px;
+    left:40px;
+}
+.new{
+    position:absolute;
+    font-family: 'courier new';
+    font-size: 20px;
+    color: #FF7067;
+    top: 130px;
+    left:120px;
+}
+img{
+        
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        width:250px;
+        
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #212534;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+
+/* ======================== */
+
+.cta2{
+    width: 150px;
+    position: relative;
+    height:50px;
+    color: #3d0602;
+    background: rgb(255, 126, 126);
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+    border-color: #212534;
+    left:-120px;
+    top: 0px;
+    
+}
+.cta{
+    position: relative; 
+    width: 150px;
+    height:50px;
+    color: #2b0044;
+    background: rgb(211, 138, 253);
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50px;
+    left: -130px;
+    border-color: #212534;
+    top: 0px;
+}
+
+.imageblock{
+width: 200px;
+}
+.kog{
+    
+    
+    width: 110px;
+    left: 20px;
+    top: 3px;
+}
+.provided{
+    position:absolute;
+    font-family: 'courier new';
+    font-size: 20px;
+    color: #fff;
+    top: 330px;
+    left:40px;
+
+}

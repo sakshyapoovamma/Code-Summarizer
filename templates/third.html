@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("/static/img/MacBook\ Pro\ 14_\ -\ 1.png");
+      }
+      .whale {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        width: 70px;
+        border-radius: 50px;
+        
+      }
+      img {
+        position: absolute;
+        top: 20px;
+        margin-left: 20px;
+        width: 90px;
+      }
+      .para {
+        margin-left: 360px;
+        margin-top: 10px;
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        font-family: "Courier New";
+      }
+      .para1 {
+        display: block;
+        position: absolute;
+        margin-top: 150px;
+        height: 200px;
+        width: 1000px;
+        padding: 2px;
+        top: 50px;
+        left: 150px;
+        background-color: rgba(255, 255, 255, 0.527);
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        z-index: -2;
+        font-family: "Courier New";
+        border-color: rgb(254, 254, 255);
+        border-width: 20px;
+      }
+      .textar {
+        margin-top: 0px;
+        width: 1500px;
+        background-color: rgba(0, 0, 0, 0.313);
+        height: 150px;
+      }
+      .text1 {
+        background-color: rgba(24, 24, 24, 0.258);
+        position: absolute;
+        left: 0px;
+        color: rgb(18, 18, 18);
+        font-size: medium;
+        font-family: "Courier New";
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: rgb(190, 190, 190);
+        border-color: rgb(56, 255, 136);
+        margin-top: 300px;
+        margin-left: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<img src="{{url_for('static',filename='img/whale 1.png')}}" class="whale" />
+    <img />-->
+    <img src="{{url_for('static',filename='img/whale 1.png')}}" class="kyc" />
+    <img />
+    <img src="{{url_for('static',filename='img/userpfp.png')}}" class="whale" />
+    <img />
+    <div class="textar">
+      <div class="para">
+        <center>
+          <h2>COMMUNITY FORUM</h2>
+          <h4 style="color: rgb(254, 127, 107)">
+            Turns out humans are still necessary
+          </h4>
+        </center>
+      </div>
+    </div>
+    <div class="para1">
+      <center>
+        {% if name %}
+        <h4>Explain my code </h4> 
+        <h3 class="newhead">{{name}}</h3>
+        {% endif %}
+      </center>
+    </div>
+    <form action="/second" method="POST" class="prompt1">
+      <label for="Name"></label>
+      <textarea rows="5" cols="100" name="name" id="name" class="text1" placeholder="type your answer here">
+      </textarea>
+  </body>
+</html>

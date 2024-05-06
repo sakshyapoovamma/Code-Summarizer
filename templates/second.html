@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("/static/img/MacBook\ Pro\ 14_\ -\ 1.png");
+      }
+      .para {
+        display: block;
+        position: absolute;
+        margin-top: 150px;
+        height: 650px;
+        width: 800px;
+        padding: 2px;
+        top: 50px;
+        left: 150px;
+        background-color: rgba(20, 20, 20, 0.43);
+        color: white;
+        border-radius: 20px;
+        z-index: -2;
+        font-family: "Courier New";
+      }
+      .heading {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 40px;
+        font-family: "Courier New";
+        color: rgb(202, 152, 255);
+        font-size: 18px;
+      }
+
+      .button1 {
+        position: absolute;
+        width: 180px;
+        height: 50px;
+        top: 100px;
+        left: 10px;
+        margin-left: 1000px;
+        margin-top: 500px;
+        color: #ff6d6d;
+        background: rgba(0, 0, 0, 0.531);
+        font-family: "Courier New";
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 50px;
+        border-color: #cdd7ff00;
+      }
+      .whale {
+        position: absolute;
+        top: 2px;
+        left: 15px;
+        width: 110px;
+      }
+      img {
+        position: absolute;
+        top: 30px;
+        left: 100px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="{{url_for('static',filename='img/whale 1.png')}}" class="whale" />
+    <img
+      src="{{url_for('static',filename='img/knowyourcode.png')}}"
+      class="kyc"
+    />
+    <div class="heading">
+      <h1>output.</h1>
+      <!-- <h1>output.</h1>
+        <center>
+        {% if head %}
+        <h3>{{head}}</h3>
+        {% endif %}
+      </center> -->
+    </div>
+
+    <form action="/third" method="POST" class="prompt">
+      <label for="Name"></label>
+      <input
+        type="submit"
+        id="sub1"
+        name="sub1"
+        class="button1"
+        value="go to community"
+      />
+    </form>
+
+    <div class="para">
+      <center>
+        {% if name %}
+        <h3 class="newhead">{{name}}</h3>
+        {% endif %}
+      </center>
+    </div>
+  </body>
+</html>

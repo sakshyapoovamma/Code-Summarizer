@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(to right,#d1c9ff,#ffc3c3);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 40px;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+img{
+    
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    width:150px;
+    border-radius: 300px;
+
+}

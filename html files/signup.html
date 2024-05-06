@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./signupstyle.css" />
+    <script defer src="./valid.js"></script>
+  </head>
+  <body>
+    <h1 onclick="window.location.href='home.html'">Logger.</h1>
+    <div class="containers">
+      <img
+        src="https://i.pinimg.com/originals/cd/79/46/cd79463dcc1d706deb15a811e35177f4.gif"
+        alt=""
+      />
+      <form id="form1" action="'/">
+        <h1 class="sign">Sign in.</h1>
+        <div class="input-control">
+          <label for="username"><b>Username</b></label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password"><b>Password</b></label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+      </form>
+      <button
+        class="signin"
+        type="submit"
+        onclick="window.location.href='logsuccess.html'"
+      >
+        sign in
+      </button>
+      <button
+        class="new"
+        type="submit"
+        onclick="window.location.href='register.html'"
+      >
+        create New account
+      </button>
+    </div>
+  </body>
+</html>
